@@ -1707,6 +1707,42 @@
 						(type background)
 					)
 				)
+				(pin input line
+					(at -17.78 8.89 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 3.81 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -3322,6 +3358,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 38.1) (xy 260.35 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94fadd02-d501-4bbc-bb7b-895c67f82a95")
+	)
+	(wire
+		(pts
 			(xy 81.28 96.52) (xy 81.28 99.06)
 		)
 		(stroke
@@ -3702,6 +3748,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 38.1) (xy 265.43 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8be03fe-abeb-4e1f-b95d-1f76a761d327")
+	)
+	(wire
+		(pts
 			(xy 55.88 39.37) (xy 55.88 40.64)
 		)
 		(stroke
@@ -3939,6 +3995,72 @@
 			(justify left bottom)
 		)
 		(uuid "f7bb5098-57a6-4029-b046-d7c81d7435d2")
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 260.35 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "006b102d-7563-4899-95f7-80f2d3e13f10")
+		(property "Reference" "#PWR017"
+			(at 260.35 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 260.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80519b79-6c35-4dd8-8294-384cb251c5de")
+		)
+		(instances
+			(project "Lmeter"
+				(path "/452f624a-c802-4318-b035-7ca142b9c5f8"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -5195,6 +5317,12 @@
 		(pin "9"
 			(uuid "790ab682-1089-4d7b-98cc-40339dca6862")
 		)
+		(pin "18"
+			(uuid "d8a0ba55-d13c-4623-9838-a1a9b26ed7e2")
+		)
+		(pin "19"
+			(uuid "59140102-444e-461b-bdd5-0d7318cbf2df")
+		)
 		(instances
 			(project ""
 				(path "/452f624a-c802-4318-b035-7ca142b9c5f8"
@@ -6253,6 +6381,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 265.43 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9031142-3e96-4896-8b78-c8770f7250b8")
+		(property "Reference" "#PWR018"
+			(at 265.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 265.43 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 265.43 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a685c6d5-d901-42ef-b948-b3ed1373cc72")
+		)
+		(instances
+			(project "Lmeter"
+				(path "/452f624a-c802-4318-b035-7ca142b9c5f8"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 90.17 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6749,7 +6943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "My_Footprint:SOIC127P600X175-14N"
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 180.34 192.71 0)
 			(effects
 				(font
